@@ -24,4 +24,4 @@ A high-performance, fully responsive single-page web application built with vani
 
 ## 🌐 Project Link
 You can view the live project here: 
-👉 https://gaelvasbur.github.io/js-entrega-de-proyecto/
+👉 https://gaelvasbur.github.io/rick-and-morty-universe-explorer/
