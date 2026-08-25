@@ -21,3 +21,5 @@ A high-performance, fully responsive single-page web application built with vani
 
 * **Separation of Concerns:** Isolated modular functions handling state orchestration separate from direct DOM rendering.
 * **Event Delegation:** Optimized single-execution listener setups preventing memory leaks during dynamic component lifecycle shifts.
+
+  https://gaelvasbur.github.io/js-entrega-de-proyecto/
