@@ -4,24 +4,24 @@ A responsive single-page web application built with vanilla web technologies. It
 
 ## 🌟 Key Features
 
-* **Dynamic Character Directory:** Real-time search and filtering by status and species using URL query parameters.
-* **On-Demand Data Fetching:** Loads detailed character information via API requests only when a user opens a modal, saving network bandwidth.
-* **Tab-Based Navigation:** Clean layout to switch between characters, episodes, locations, and user settings.
-* **Favorites System:** Saves user preferences locally using the browser's `localStorage`.
-* **Error Handling & Loading States:** Built-in UI indicators for loading states and 404/network errors.
-* **Responsive Design:** Mobile-first layout built with CSS Grid and Flexbox.
+* **Dynamic Character Directory:** Real-time search and multi-criteria filtering (status & species) integrated with dynamic URL tracking.
+* **On-Demand Data Fetching:** Minimizes network bandwidth by fetching detailed character resources (`/character/{id}`) only when a user interacts with a specific modal.
+* **Tab-Based Navigation:** Clean views orchestration to switch seamlessly between characters, episodes, and saved favorites.
+* **Persistent Favorites System:** Built-in client-side data persistence leveraging the browser's Web Storage API (`localStorage`).
+* **UI/UX Resilience:** Comprehensive error handling for network or search failures paired with immediate global loading indicators.
+* **Responsive Layout:** Fluid layout built with CSS Grid and Flexbox using a mobile-first approach.
 
-## 🛠️ Tech Stack & Concepts
+## 🛠️ Tech Stack & Concepts Demonstrated
 
-* **Frontend:** Semantic HTML5, CSS3 (Grid, Flexbox, Custom Properties).
-* **JavaScript (ES6+):** Async/Await, Fetch API, LocalStorage, DOM Manipulation.
-* **Performance & Security:** Image lazy loading and input sanitization (`encodeURIComponent`).
+* **Core Web:** Semantic HTML5, Responsive CSS3 (CSS Grid, Flexbox, CSS Custom Properties).
+* **JavaScript (ES6+):** Async/Await, Fetch API, LocalStorage, Input Sanitization (`encodeURIComponent`), Event Bubbling/Propagation Control.
+* **Performance:** Lazy loading images (`loading="lazy"`) and optimized layout updates.
 
 ## ⚙️ Architecture & Best Practices
 
-* **Separation of Concerns:** Independent JavaScript functions handling state logic separate from UI rendering.
-* **Event Delegation:** Uses single event listeners on parent elements to manage dynamic components and optimize memory usage.
-
+* **Separation of Concerns:** Independent architecture separating API data fetching, DOM rendering layers, and UI state management functions.
+* **State Management:** Centralized global variables tracking application state (`currentView`, `currentPage`) to drive layout changes dynamically.
+* **Modular Initialization:** Clean lifecycle setup execution via a core `init()` function to bind all listeners on document load.
 
 ## 🌐 Project Link
 You can view the live project here: 
