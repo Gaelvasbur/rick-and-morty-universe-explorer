@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Universe Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="app-header">
+        <h1>Rick and Morty Explorer</h1>
+        <!-- View tabs navigation -->
+        <nav class="nav-tabs">
+            <button id="tab-characters" class="tab-btn active">Characters</button>
+            <button id="tab-episodes" class="tab-btn">Episodes</button>
+            <button id="tab-favorites" class="tab-btn">My Favorites ⭐</button>
+        </nav>
+    </header>
+
+    <main class="app-container">
+        
+        <!-- Filters Block (Point 1) -->
+        <section id="filters-section" class="filters-container">
+            <input type="text" id="search-input" placeholder="Search by name...">
+            
+            <select id="status-filter">
+                <option value="">All Statuses</option>
+                <option value="alive">Alive</option>
+                <option value="dead">Dead</option>
+                <option value="unknown">Unknown</option>
+            </select>
+
+            <select id="species-filter">
+                <option value="">All Species</option>
+                <option value="human">Human</option>
+                <option value="alien">Alien</option>
+                <option value="humanoid">Humanoid</option>
+                <option value="mythological creature">Mythological</option>
+                <option value="robot">Robot</option>
+            </select>
+        </section>
+
+        <!-- Dynamic Feedback Messages (Point 6) -->
+        <div id="loading-spinner" class="spinner hidden">Loading data, please wait...</div>
+        <div id="error-message" class="error-box hidden"></div>
+
+        <!-- Main Dynamic Grid Content -->
+        <section id="cards-grid" class="cards-grid"></section>
+
+        <!-- Pagination Block (Point 4) -->
+        <div id="pagination-container" class="pagination-controls">
+            <button id="prev-btn" disabled>Previous</button>
+            <span id="page-indicator">Page 1</span>
+            <button id="next-btn">Next</button>
+        </div>
+
+    </main>
+
+    <!-- Detailed Modal Window (Point 2) -->
+    <div id="detail-modal" class="modal hidden">
+        <div class="modal-content">
+            <button id="close-modal-btn" class="close-btn">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+<!-- Este es el título principal de la página 3 divs: 
+ DIV 1: Es esa cortina, ventana o fondo translúcida o grisacea que cubre toda la pantalla al dar clic al personaje, 
+ DIV 2: Es la cajita del centro con estilos y el botón de cerrar x, son puros estilos no esta en js, y 
+ DIV 3: Es el lienzo interno para los datos y los mensajes de carga.
+ -->
+    <!-- Application Script Connection -->
+    <script src="app.js"></script>
+</body>
+</html>
