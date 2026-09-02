@@ -5,7 +5,7 @@ A responsive single-page web application built with vanilla web technologies. It
 ## 🌟 Key Features
 
 * **Dynamic Character Directory:** Real-time search and multi-criteria filtering (status & species) integrated with dynamic URL tracking.
-* **On-Demand Data Fetching:** Minimizes network bandwidth by fetching detailed character resources (`/character/{id}`) only when a user interacts with a specific modal.
+* **On-Demand Data Fetching:** Minimizes network bandwidth by fetching detailed character resources only when a user interacts with a specific modal.
 * **Tab-Based Navigation:** Clean views orchestration to switch seamlessly between characters, episodes, and saved favorites.
 * **Persistent Favorites System:** Built-in client-side data persistence leveraging the browser's Web Storage API (`localStorage`).
 * **UI/UX Resilience:** Comprehensive error handling for network or search failures paired with immediate global loading indicators.
@@ -15,7 +15,6 @@ A responsive single-page web application built with vanilla web technologies. It
 
 * **Core Web:** Semantic HTML5, Responsive CSS3 (CSS Grid, Flexbox, CSS Custom Properties).
 * **JavaScript (ES6+):** Async/Await, Fetch API, LocalStorage, Input Sanitization (`encodeURIComponent`), Event Bubbling/Propagation Control.
-* **Performance:** Lazy loading images (`loading="lazy"`) and optimized layout updates.
 
 ## ⚙️ Architecture & Best Practices
 
